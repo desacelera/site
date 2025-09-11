@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🚀 Método Secreto TikTok Shop - Ganhe R$ 5.000/mês</title>
+  <script src="https://www.youtube.com/iframe_api"></script>
   <style>
     body {
       margin: 0;
@@ -14,22 +15,27 @@
       color: #fff;
       overflow-x: hidden;
     }
+
     .tiktok-container {
       position: relative;
       width: 100vw;
       height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       background: #000;
     }
+
     .video-wrapper {
       position: relative;
       width: 100%;
       max-width: 400px;
-      height: 100vh;
+      height: 600px;
       background: #000;
+      margin-bottom: 20px;
     }
+
     #player {
       width: 100%;
       height: 100%;
@@ -37,6 +43,7 @@
       border-radius: 0;
       box-shadow: none;
     }
+
     .overlay-content {
       position: absolute;
       bottom: 0;
@@ -46,6 +53,7 @@
       padding: 30px 20px 20px;
       z-index: 10;
     }
+
     .video-title {
       font-size: 1.3rem;
       font-weight: bold;
@@ -53,6 +61,7 @@
       margin-bottom: 8px;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
     }
+
     .video-subtitle {
       color: #fff;
       margin-bottom: 20px;
@@ -60,8 +69,10 @@
       opacity: 0.9;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
     }
+
     #afiliado-btn {
       width: 100%;
+      max-width: 400px;
       padding: 16px;
       font-size: 1.1rem;
       font-weight: bold;
@@ -74,41 +85,14 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       box-shadow: 0 4px 15px rgba(254, 231, 21, 0.4);
+      display: none;
     }
+
     #afiliado-btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(254, 231, 21, 0.6);
     }
-    .side-info {
-      position: absolute;
-      right: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      z-index: 10;
-    }
-    .info-item {
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(10px);
-      padding: 15px;
-      border-radius: 15px;
-      text-align: center;
-      min-width: 80px;
-      border: 1px solid rgba(254, 231, 21, 0.3);
-    }
-    .info-number {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: #FEE715;
-      margin-bottom: 5px;
-    }
-    .info-label {
-      font-size: 0.7rem;
-      color: #fff;
-      opacity: 0.8;
-    }
+
     .urgency-badge {
       position: absolute;
       top: 20px;
@@ -125,15 +109,18 @@
       z-index: 10;
       backdrop-filter: blur(10px);
     }
+
     @keyframes blink {
       0%, 50% { opacity: 1; }
       51%, 100% { opacity: 0.7; }
     }
+
     @media (min-width: 768px) {
       .tiktok-container {
         background: linear-gradient(135deg, #101820 0%, #1a2332 100%);
         padding: 20px;
       }
+
       .video-wrapper {
         max-width: 350px;
         height: 600px;
@@ -142,87 +129,103 @@
         box-shadow: 0 20px 40px rgba(0,0,0,0.5);
         border: 3px solid #FEE715;
       }
+
       #player {
         border-radius: 20px;
       }
+
+      #afiliado-btn {
+        max-width: 350px;
+      }
     }
+
     @media (max-width: 480px) {
-      .side-info {
-        right: 10px;
-        gap: 15px;
-      }
-      .info-item {
-        padding: 12px;
-        min-width: 70px;
-      }
-      .info-number {
-        font-size: 1.2rem;
-      }
-      .info-label {
-        font-size: 0.65rem;
-      }
       .overlay-content {
         padding: 20px 15px 15px;
       }
+
       .video-title {
         font-size: 1.1rem;
       }
+
       .video-subtitle {
         font-size: 0.85rem;
       }
+
       #afiliado-btn {
         font-size: 1rem;
         padding: 14px;
+        max-width: 350px;
       }
     }
   </style>
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // SUBSTITUA 'YOUR_PIXEL_ID_HERE' pelo seu ID do Facebook Pixel
+    fbq('init', 'YOUR_PIXEL_ID_HERE');
+    fbq('track', 'PageView');
+    </script>
 </head>
 <body>
   <div class="tiktok-container">
     <div class="video-wrapper">
-      <div id="player">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/7i9KX1f-Vc4?si=TUQL99GfbahNlIgW&autoplay=1&mute=1&loop=1&controls=0&modestbranding=1"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          style="width:100%; height:100%; object-fit:cover;"
-        ></iframe>
-      </div>
-      
+      <div id="player"></div>
+
       <div class="urgency-badge">
         ⏰ VAGAS LIMITADAS - Restam 7 vagas
       </div>
-      
-      <div class="side-info">
-        <div class="info-item">
-          <div class="info-number">R$ 5K</div>
-          <div class="info-label">Ganho Médio</div>
-        </div>
-        <div class="info-item">
-          <div class="info-number">94%</div>
-          <div class="info-label">Sucesso</div>
-        </div>
-        <div class="info-item">
-          <div class="info-number">30min</div>
-          <div class="info-label">Por Dia</div>
-        </div>
-        
-      </div>
-      
+
       <div class="overlay-content">
-        <h1 class="video-title">🔥 MÉTODO SECRETO REVELADO</h1>
-        <p class="video-subtitle">Como Maria ganhou R$ 8.750 em 30 dias no TikTok Shop</p>
-        <button id="afiliado-btn">🚀 QUERO SER AFILIADO AGORA</button>
+        <p class="video-subtitle">🔥 MÉTODO SECRETO REVELADO</p>
       </div>
     </div>
+
+    <button id="afiliado-btn">🚀 QUERO SER AFILIADO AGORA</button>
   </div>
 
   <script>
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '100%',
+        width: '100%',
+        videoId: '7i9KX1f-Vc4',
+        playerVars: {
+          'autoplay': 1,
+          'mute': 1,
+          'loop': 1,
+          'controls': 0,
+          'modestbranding': 1,
+          'rel': 0
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      // Player is ready
+    }
+
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING) {
+        // Video started playing, wait 6 seconds then show button
+        setTimeout(function() {
+          document.getElementById('afiliado-btn').style.display = 'block';
+        }, 6000);
+      }
+    }
+
     document.getElementById('afiliado-btn').addEventListener('click', function() {
       window.location.href = 'https://pay.kiwify.com.br/cSxEA4z?afid=31hVsEJg';
     });
