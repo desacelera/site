@@ -241,7 +241,7 @@
   <div class="tiktok-container">
     <h2 class="main-title">Ex-CLT revela nova função oculta do TikTok<br>
       que paga de R$90 a R$380 por dia<br>para mulheres comuns ganharem no conforto de casa</h2>
-    <div class="video-wrapper" id="video-wrapper" style="display:none;">
+    <div class="video-wrapper" id="video-wrapper">
       <div id="player"></div>
       <div class="urgency-badge">
         ⏰ VAGAS LIMITADAS - Restam 7 vagas
@@ -267,13 +267,7 @@
 
   <script>
     var player;
-    // Após 20 segundos, mostra o vídeo e inicializa o player
-    setTimeout(function() {
-      document.getElementById('video-wrapper').style.display = 'block';
-      if (typeof YT !== 'undefined' && YT && YT.Player) {
-        onYouTubeIframeAPIReady();
-      }
-    }, 20000);
+    // Vídeo aparece imediatamente, botão aparece após 6 segundos de reprodução
 
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
@@ -285,7 +279,7 @@
           'loop': 1,
           'controls': 0,
           'modestbranding': 1,
-          'rel': 0
+          'rel': 0,
         },
         events: {
           'onReady': onPlayerReady,
@@ -300,10 +294,10 @@
 
     function onPlayerStateChange(event) {
       if (event.data == YT.PlayerState.PLAYING) {
-        // Video started playing, wait 6 seconds then show button
+        // Video started playing, wait 20 seconds then show button
         setTimeout(function() {
           document.getElementById('afiliado-btn').style.display = 'block';
-        }, 6000);
+        }, 20000);
       }
     }
 
